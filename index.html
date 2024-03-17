@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini project</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="hand">ROCK <br>PAPER<br> SCISSORS</div>
+            <div class="oscore">
+                <div class="score">
+                    <p class="c1">COMPUTER <br>SCORE</p>
+                    <p id="comp-score">0</p>
+
+                </div>
+                <div class="score">
+                    <p class="c1">YOUR <br>SCORE</p>
+                    <p id="user-score">0</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="hchoices">
+
+            <div class="choice" id="rock">
+                <img src="rock.png" id="rockImg">
+            </div>
+            <div class=" line">
+            </div>
+            <div class="choice" id="paper">
+                <img src="paper.png" id="paperImg">
+            </div>
+            <div class="line1"></div>
+            <div class="choice" id="scissor">
+                <img src="scissors.png" id="scissorImg">
+            </div>
+
+            <div class="line2"></div>
+        </div>
+
+
+        <button id="toggle-btn">RULES </button>
+        <button id="toggle-btn2">NEXT </button>
+
+        <div id="rules-container">
+            <div class="rpage">
+                <h1>Game Rules <div id="close-btn">
+                        <span class="close-icon">X</span>
+                    </div>
+                </h1>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                        paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="msg-container">
+        <p id="msg">Play your move</p>
+
+    </div>
+
+
+
+    <button onclick="displayText()">Play your move1</button>
+    <div class="samp">
+        <div class="s1">
+            <p>YOU PICKED</p>
+            <img src="" id="paper1">
+        </div>
+        <div class="s2">
+            <p>YOU WIN </p>
+            <p>AGAINST PC</p>
+            <button onclick="playAgain()">PLAY AGAIN</button>
+        </div>
+        <div class="s3">
+            <p>PC PICKED</p>
+            <img src="" alt="rock" id="compImage1">
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
