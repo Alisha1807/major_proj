@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #8cc461;
+}
+
+.hand {
+  font-family: "Roboto";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+}
+.c1 {
+  background-color: white;
+  color: rgba(101, 101, 101, 1);
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  margin: 15px 300px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.score {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  background: rgba(0, 68, 41, 1);
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+ul,
+li {
+  background: rgba(0, 68, 41, 1);
+  list-style: square;
+  margin-bottom: 10px;
+}
+
+.choice {
+  display: flex;
+  /* border-radius: 50%; */
+  cursor: pointer;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: white;
+  align-items: center;
+}
+
+.choice:hover {
+  width: 200px;
+  transition: all 2s ease-in-out;
+}
+
+#paper {
+  position: absolute;
+  top: 300px;
+  border: 16px solid rgba(255, 169, 67, 1);
+  z-index: 100;
+  align-items: center;
+}
+
+#scissor {
+  position: absolute;
+  top: 0px;
+  right: 350px;
+  border: 16px solid rgba(189, 0, 255, 1);
+  z-index: 100;
+}
+
+#rock {
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  border: 16px solid rgba(0, 116, 182, 1);
+  z-index: 100;
+}
+
+.hchoices {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-board {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  background-color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.msg-container {
+  margin-top: 35rem;
+}
+
+#msg {
+  color: #fff;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#msg1 {
+  display: inline-block;
+  margin-right: 10px;
+  top: 100px;
+}
+
+.container {
+  position: relative;
+}
+
+.rpage {
+  position: absolute;
+  right: 15px;
+  width: 250px;
+  border: 5px solid white;
+  top: 125px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 13px;
+  padding: 20px;
+  background: rgba(0, 68, 41, 1);
+  font-family: "roboto";
+}
+
+.btn {
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.close-btn img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 5px;
+}
+
+img {
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* position: absolute;
+  top: 30px;
+  left: 25px; */
+}
+
+#rules-container {
+  display: none;
+}
+
+#rules-container.show {
+  display: block;
+}
+
+#close-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  background: #ff0000;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 4px solid white;
+}
+
+.close-icon {
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 20px;
+}
+
+#toggle-btn {
+  padding: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 150px;
+  bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  font-family: "roboto";
+  color: white;
+  font-size: 20px;
+}
+
+#toggle-btn2 {
+  padding: 20px;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  font-family: "roboto";
+  color: white;
+  font-size: 20px;
+}
+
+.line {
+  position: absolute;
+  width: 205px; /* length of the line */
+  height: 15px; /*thickness of the line */
+  background-color: black;
+  top: 100px;
+}
+
+.line1 {
+  position: absolute;
+  top: 235px;
+  left: 410px;
+  width: 205px; /*  length of the line*/
+  height: 15px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.line2 {
+  position: absolute;
+  top: 235px;
+  left: 660px;
+  width: 230px; /*length of the line*/
+  height: 15px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+
+.msg-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.samp {
+  width: 600px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 300px;
+}
